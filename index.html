@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>Calculator v2.0</header>
+    <div class="container">
+      <div class="numbers">
+        number 1
+        <input type="number" class="button" id="number1" />
+      </div>
+      <div class="numbers">
+        number 2
+        <input type="number" class="button" id="number2" />
+      </div>
+      <div class="action-button">
+        <input type="button" value="+" class="action" />
+        <input type="button" value="-" class="action" />
+        <input type="button" value="*" class="action" />
+        <input type="button" value="/" class="action" />
+      </div>
+      <div class="result-and-clear">
+        result
+        <input type="text" class="result" readonly />
+        <input type="button" value="C" class="action" />
+      </div>
+    </div>
+    <div class="history" id="history"></div>
+    <input type="text" value="clear all" class="clear-all" readonly />
+
+    <footer>&copy; 2024 Calculator App v2.0. JS. All rights reserved.</footer>
+  </body>
+</html>

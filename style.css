@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  font-family: "Dangrek", sans-serif;
+}
+
+body {
+  background-color: #34007d;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: auto;
+}
+
+header {
+  color: #b30050;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 300px;
+  font-size: 30px;
+  text-shadow: 0 0 20px rgba(8, 7, 7, 0.8);
+}
+
+.container {
+  background-color: #b30050;
+  border-radius: 25px;
+  width: 90%;
+  max-width: 500px;
+  height: 500px;
+  box-shadow: 0 0 20px rgba(224, 138, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.result {
+  width: 180px;
+}
+
+.button {
+  width: 120px;
+}
+
+.result,
+.button {
+  height: 80px;
+  border-radius: 10%;
+  padding: 30px;
+  margin: 20px;
+  background-color: #34007d;
+  border: 3px solid #b300b3;
+  box-shadow: 0 0 20px rgba(243, 65, 175, 0.8);
+  font-size: 30px;
+}
+
+.action {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #34007d;
+  font-size: 30px;
+  border: 3px solid #b300b3;
+  box-shadow: 0 0 20px rgba(243, 65, 175, 0.8);
+  cursor: pointer;
+}
+
+input {
+  cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.history {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 34px;
+  padding: 20px;
+}
+
+.clear-all {
+  height: 70px;
+  width: 90%;
+  max-width: 180px;
+  border-radius: 25px;
+  background-color: #34007d;
+  font-size: 30px;
+  border: 3px solid #b300b3;
+  box-shadow: 0 0 20px rgba(243, 65, 175, 0.8);
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+input {
+  outline: none;
+}
+
+.numbers,
+.action-button,
+.result-and-clear {
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .numbers,
+  .action-button,
+  .result-and-clear {
+    min-width: 100%;
+    padding: 8px;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.container.visible {
+  opacity: 1;
+}
